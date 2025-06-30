@@ -132,11 +132,11 @@ contract AMARCOIN is Test{
         c.mint(address(this), 100);
         
         vm.expectEmit(true, true, false, true);
-        emit Approval(address(this), 0x075c299cf3b9FCF7C9fD5272cd2ed21A4688bEeD, 100);
+        emit Approval(address(this), 0x49963B291bd212702ae6Fc79556086B52F41622F, 100);
 
-        c.approve(0x075c299cf3b9FCF7C9fD5272cd2ed21A4688bEeD, 100);
-        vm.prank(0x075c299cf3b9FCF7C9fD5272cd2ed21A4688bEeD);
-        c.transferFrom(address(this), 0x075c299cf3b9FCF7C9fD5272cd2ed21A4688bEeD, 100);
+        c.approve(0x49963B291bd212702ae6Fc79556086B52F41622F, 100);
+        vm.prank(0x49963B291bd212702ae6Fc79556086B52F41622F);
+        c.transferFrom(address(this), 0x49963B291bd212702ae6Fc79556086B52F41622F, 100);
     }
     
 
